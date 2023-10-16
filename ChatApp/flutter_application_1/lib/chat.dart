@@ -37,8 +37,8 @@ class MyChatState extends State<MyChat> {
               ),
             ),
             // First icon
-            const SizedBox(width: 8), // Add spacing between icons
-            const Icon(Icons.person), // Second icon
+            const SizedBox(width: 8), 
+            const Icon(Icons.person), 
           ],
         ),
         actions: [
@@ -67,15 +67,15 @@ class MyChatState extends State<MyChat> {
         ],
 
         iconTheme: const IconThemeData(
-            color: Colors.white), // Set the color of the icon
+            color: Colors.white), 
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end, // Align at the bottom
+          mainAxisAlignment: MainAxisAlignment.end, 
           children: [
-            const SizedBox(height: 16), // Add spacing
-            Text(sentMessage), // Display sent message
+            const SizedBox(height: 16), 
+            Text(sentMessage), 
             Row(
               children: [
                 Expanded(
@@ -89,10 +89,10 @@ class MyChatState extends State<MyChat> {
                 ),
                 IconButton(
                   onPressed: () {
-                    // Action when send button is pressed
+                    
                     String message = textEditingController.text;
                     setState(() {
-                      sentMessage = message; // Update the sent message
+                      sentMessage = message; 
                     });
                   },
                   icon: const Icon(Icons.send),
